@@ -5,9 +5,8 @@ def lihat_list(angka):
 
 def bubble_sort(angka):
     print("Proses pengurutan Bubble Sort:")
-    n = len(angka)
-    for i in range(n - 1):
-        for j in range(n - i - 1):
+    for i in range(len(angka)):
+        for j in range(len(angka) - 1 - i): 
             if angka[j] > angka[j + 1]:
                 angka[j], angka[j + 1] = angka[j + 1], angka[j]
         print("Iterasi ke", i + 1, ":", angka)
